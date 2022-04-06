@@ -36,10 +36,9 @@ Cypress.Commands.add('fillMandatoryFieldsAndSubmit', function(){
 })
 
 Cypress.Commands.add('assertTenResultsPlusMoreResults', function(){
-  cy.get('.result')
+  cy.get('.result', {timeout:5000})
     .should('have.length', 11)
   cy.get('div[id="rld-1"] a')
-  cy.wait(10000)
     .should('have.text','Mais resultados')   
 
 })
