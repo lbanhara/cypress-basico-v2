@@ -13,13 +13,13 @@ describe('Search', function() {
         cy.get('input[type="text"]').as('searchField')
     })
 
-    it.only('types and hit enter', function(){
+    it('types and hit enter', function(){
         cy.get('@searchField')
           .type(`${searchTerm}{enter}`)
         cy.wait(10000)
         cy.wait('@getSearchResults')
 
-        //cy.assertTenResultsPlusMoreResults()
+        cy.assertTenResultsPlusMoreResults()
 
     })
 
@@ -29,7 +29,7 @@ describe('Search', function() {
         cy.get('input[type="submit"]')
           .should('be.visible')
           .click()
-
+        cy.wait(10000)
         cy.wait('@getSearchResults')
         cy.assertTenResultsPlusMoreResults()
     })
@@ -38,7 +38,8 @@ describe('Search', function() {
         cy.get('@searchField')
           .type(searchTerm)    
           .get('form').submit()
-
+        
+        cy.wait(10000)
         cy.wait('@getSearchResults')
         cy.assertTenResultsPlusMoreResults()
     })
