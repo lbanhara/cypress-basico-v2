@@ -20,7 +20,7 @@ describe('Search', function() {
         
         cy.get('.result')
           .should('have.length', 11)
-        cy.get('#rld-1')
+        cy.get('#rld-1 a')
           .should('have.text','Mais resultados')
        
        
