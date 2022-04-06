@@ -21,7 +21,7 @@ describe('Search', function() {
         cy.get('.result')
           .should('have.length', 11)
         cy.get('#rld-1 a')
-          .should('have.text','Mais resultados')
+          .should('contain','Mais resultados')
        
        
           /*cy.get('.result').last()
