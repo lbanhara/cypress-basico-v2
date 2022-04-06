@@ -13,15 +13,19 @@ describe('Search', function() {
         cy.get('input[type="text"]').as('searchField')
     })
 
-    it('types and hit enter', function(){
+    it.only('types and hit enter', function(){
         cy.get('@searchField')
           .type(`${searchTerm}{enter}`)
-        //cy.wait('@getSearchResults')
+        cy.wait('@getSearchResults')
         
         cy.get('.result')
           .should('have.length', 11)
-        cy.get('.result').last()
-          .should('contain', 'Mais resultados')
+        cy.get('#rld-1')
+          .should('have.text','Mais resultados')
+       
+       
+          /*cy.get('.result').last()
+          .should('contain', 'Mais resultados')*/
     })
 
     it('types and clicks the magnifying glass button', function(){
