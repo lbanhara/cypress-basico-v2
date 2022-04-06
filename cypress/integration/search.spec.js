@@ -13,19 +13,13 @@ describe('Search', function() {
         cy.get('input[type="text"]').as('searchField')
     })
 
-    it.only('types and hit enter', function(){
+    it('types and hit enter', function(){
         cy.get('@searchField')
           .type(`${searchTerm}{enter}`)
         cy.wait('@getSearchResults')
-        
-        cy.get('.result')
-          .should('have.length', 11)
-        cy.get('#rld-1')
-          .should('have.text','Mais resultados')
-       
-       
-          /*cy.get('.result').last()
-          .should('contain', 'Mais resultados')*/
+
+        cy.assertTenResultsPlusMoreResults()
+
     })
 
     it('types and clicks the magnifying glass button', function(){
@@ -36,10 +30,7 @@ describe('Search', function() {
           .click()
 
         cy.wait('@getSearchResults')
-        cy.get('.result')
-          .should('have.length', 11)
-        cy.get('.result').last()
-         .should('contain', 'Mais resultados')
+        cy.assertTenResultsPlusMoreResults()
     })
 
     it('types and submit the form directly', function(){
@@ -48,9 +39,6 @@ describe('Search', function() {
           .get('form').submit()
 
         cy.wait('@getSearchResults')
-        cy.get('.result')
-          .should('have.length', 11)
-        cy.get('.result').last()
-          .should('contain', 'Mais resultados')
+        cy.assertTenResultsPlusMoreResults()
     })
 })
