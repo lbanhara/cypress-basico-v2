@@ -36,9 +36,6 @@ Cypress.Commands.add('fillMandatoryFieldsAndSubmit', function(){
 })
 
 Cypress.Commands.add('assertTenResultsPlusMoreResults', function(){
-    cy.get('.result')
-      .should('have.length', 11)
-    cy.get('.result').last()
-      .should('contain', 'Mais resultados')   
+   
 
 })
