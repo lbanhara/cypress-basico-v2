@@ -15,7 +15,7 @@ describe('Search', function() {
 
     it.only('types and hit enter', function(){
         cy.get('@searchField')
-          .type(`${searchTerm}{enter}`)
+          .type(`${searchTerm}{enter}`, {timeout:5000})
         
         cy.wait('@getSearchResults')
 
@@ -23,9 +23,9 @@ describe('Search', function() {
 
     })
 
-    it('types and clicks the magnifying glass button', function(){
+    it.only('types and clicks the magnifying glass button', function(){
         cy.get('@searchField')
-          .type(searchTerm)  
+          .type(searchTerm, {timeout:5000})  
         cy.get('input[type="submit"]')
           .should('be.visible')
           .click()
