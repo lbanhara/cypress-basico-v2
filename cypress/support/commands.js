@@ -39,6 +39,7 @@ Cypress.Commands.add('assertTenResultsPlusMoreResults', function(){
   cy.get('.result')
     .should('have.length', 11)
   cy.get('div[id="rld-1"] a')
+  cy.wait(10000)
     .should('have.text','Mais resultados')   
 
 })
