@@ -29,15 +29,21 @@ describe('Search', function() {
           .click()
 
         cy.wait('@getSearchResults')
-        cy.assertTenResultsPlusMoreResults()
+        cy.get('.result')
+          .should('have.length', 11)
+        cy.get('.result').last()
+         .should('contain', 'Mais resultados')
     })
 
-    it('types and submit the form directly', function(){
+    it.only('types and submit the form directly', function(){
         cy.get('@searchField')
           .type(searchTerm)    
           .get('form').submit()
 
         cy.wait('@getSearchResults')
-        cy.assertTenResultsPlusMoreResults()
+        cy.get('.result')
+          .should('have.length', 11)
+        cy.get('.result').last()
+          .should('contain', 'Mais resultados')
     })
 })
