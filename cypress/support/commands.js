@@ -39,6 +39,6 @@ Cypress.Commands.add('assertTenResultsPlusMoreResults', function(){
   cy.get('.result', {timeout:5000})
     .should('have.length', 11)
   cy.get('div[id="rld-1"] a')
-    .should('have.text','More Results')   
+    .should('have.text','More results')  
 
 })
