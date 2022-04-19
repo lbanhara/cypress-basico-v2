@@ -1,4 +1,4 @@
-# cypress-basico-v2
+# cypress-basico-v2 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/lbanhara/cypress-basico-v2/End-to-end%20tests%20%F0%9F%A7%AA)
 
 Sample project for the basic course of the talking about testing online school
 
