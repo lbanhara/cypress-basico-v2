@@ -172,14 +172,14 @@ describe('Central de Atendimento ao Cliente TAT', function() {
           })
   
     })
-    it('17- eleciona um arquivo utilizando uma fixture para a qual foi dada um alias', function() {
+    it.only('17- eleciona um arquivo utilizando uma fixture para a qual foi dada um alias', function() {
        cy.fixture('example.json').as('sampleFile')
 
        cy.get('input[type="file"]')
          .should('not.have.value') 
          .selectFile('@sampleFile',{action:"drag-drop"})
          .should(function ($input) {
-           // console.log($input)  
+            console.log($input)  
             expect($input[0].files[0].name).to.equal('example.json')   
           })
         })
