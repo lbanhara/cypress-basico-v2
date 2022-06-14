@@ -1,5 +1,7 @@
 {
-    "pluginsFile": false,
-    "viewportHeight": 880,
-    "viewportWidth": 1280 
+    "pluginsFile": "./cypress/plugins/index.js",
+    "viewportHeight": 1000,
+    "viewportWidth": 1280,
+    "chromeWebSecurity": false,
+    "experimentalSessionAndOrigin": true
 }

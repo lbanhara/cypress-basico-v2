@@ -24,6 +24,10 @@
   "license": "MIT",
   "homepage": "https://github.com/wlsf82/cypress-basico-v2#readme",
   "dependencies": {
-    "cypress": "^9.5.2"
+    "cypress": "^9.7.0",
+    "papaparse": "^5.3.2"
+  },
+  "devDependencies": {
+    "xlsx": "^0.18.5"
   }
 }

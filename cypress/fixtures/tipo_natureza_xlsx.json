@@ -1,0 +1,74 @@
+[
+    {
+        "CD_TIPO_NATUREZA": 1,
+        "DC_TIPO_NATUREZA": "COMPOSTAGEM",
+        "NM_USUARIO": "teste al0104",
+        "DT_USU_ATUA": "2021-08-02 15:17:11.000"
+    },
+    {
+        "CD_TIPO_NATUREZA": 2,
+        "DC_TIPO_NATUREZA": "TRATAMENTO R.S.S.",
+        "NM_USUARIO": "teste al0104",
+        "DT_USU_ATUA": "2021-03-15 18:07:52.000"
+    },
+    {
+        "CD_TIPO_NATUREZA": 3,
+        "DC_TIPO_NATUREZA": "TRANSBORDO",
+        "NM_USUARIO": "teste al0104",
+        "DT_USU_ATUA": "2022-01-11 16:10:49.000"
+    },
+    {
+        "CD_TIPO_NATUREZA": 4,
+        "DC_TIPO_NATUREZA": "TRIAGEM",
+        "NM_USUARIO": "d716207-LIMPURB",
+        "DT_USU_ATUA": "2003-07-08 08:58:17.000"
+    },
+    {
+        "CD_TIPO_NATUREZA": 5,
+        "DC_TIPO_NATUREZA": "ATERRO SANITARIO",
+        "NM_USUARIO": "teste al0104",
+        "DT_USU_ATUA": "2021-01-29 13:12:23.000"
+    },
+    {
+        "CD_TIPO_NATUREZA": 6,
+        "DC_TIPO_NATUREZA": "AT. INERTES",
+        "NM_USUARIO": "teste al0104",
+        "DT_USU_ATUA": "2021-09-30 11:48:49.000"
+    },
+    {
+        "CD_TIPO_NATUREZA": 7,
+        "DC_TIPO_NATUREZA": "SELETIVA DIFERENCIADA",
+        "NM_USUARIO": "d716196-SSOLIMPC45",
+        "DT_USU_ATUA": "2005-11-01 17:25:31.827"
+    },
+    {
+        "CD_TIPO_NATUREZA": 8,
+        "DC_TIPO_NATUREZA": "SELETIVA SOLIDARIA",
+        "NM_USUARIO": "d716196-SSOLIMPC45",
+        "DT_USU_ATUA": "2005-11-01 17:25:46.123"
+    },
+    {
+        "CD_TIPO_NATUREZA": 9,
+        "DC_TIPO_NATUREZA": "SELETIVA DE PEV",
+        "NM_USUARIO": "teste al0104",
+        "DT_USU_ATUA": "2020-07-21 11:57:45.000"
+    },
+    {
+        "CD_TIPO_NATUREZA": 10,
+        "DC_TIPO_NATUREZA": "NATUREZA",
+        "NM_USUARIO": "teste al0104",
+        "DT_USU_ATUA": "2021-07-05 18:08:16.403"
+    },
+    {
+        "CD_TIPO_NATUREZA": 12,
+        "DC_TIPO_NATUREZA": "ATT - AREA DE TRANSB., TRIAGEM",
+        "NM_USUARIO": "d716207-SSOLIMPC696",
+        "DT_USU_ATUA": "2019-06-05 11:41:55.653"
+    },
+    {
+        "CD_TIPO_NATUREZA": 14,
+        "DC_TIPO_NATUREZA": "NATUREZA NOVA - KOIDE",
+        "NM_USUARIO": "teste al01041",
+        "DT_USU_ATUA": "2021-09-23 11:28:21.000"
+    }
+]
