@@ -36,7 +36,7 @@ Cypress.Commands.add('fillMandatoryFieldsAndSubmit', function(){
 })
 
 Cypress.Commands.add('assertTenResultsPlusMoreResults', function(){
-  cy.get('div[id="links"]')
+  cy.get('div#links.results.js-results')
     .should('have.length', 1)
   cy.get('div[id="rld-1"] a')
     .should('have.text','More results')  
